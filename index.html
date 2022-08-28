@@ -26,14 +26,14 @@
         <div class="md:flex w-full justify-around">
             <span class="">Cytonn Residences</span>
             <ul class="invisible md:visible flex mx-4 text-xs font-bold pt-1">
-                <li class="mx-2">Our Residences</li>
-                <li class="mx-2">Rooms & Suites</li>
-                <li class="mx-2">Meetings & Conferences</li>
-                <li class="mx-2">Services</li>
-                <li class="mx-2">Features</li>
+                <li class="mx-1">Our Residences</li>
+                <li class="mx-1">Rooms & Suites</li>
+                <li class="mx-1">Meetings & Conferences</li>
+                <li class="mx-1">Services</li>
+                <li class="mx-1">Features</li>
             </ul>
             <span class="invisible md:visible">|</span>
-            <ul class="flex text-xs font-bold pt-1 invisible md:visible">
+            <ul class="flex text-xs font-light pt-1 invisible md:visible">
                 <li class="mx-2">Who we are</li>
                 <li class="mx-2">Media Centre</li>
                 <li class="mx-2">Support</li>
@@ -169,22 +169,26 @@
                   </svg>                  
             </button>
         </div>
-        <p class="text-4xl">News & Articles</p>
-        <div class="mt-4 flex justify-between">
-            <span class="">Find facts and figures on people and the environment, or visualize the latest data on the
+        <p class="text-5xl font-extralight text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">News & Articles</p>
+        <div class="my-4 flex justify-between">
+            <span class="font-light w-1/2">Find facts and figures on people and the environment, or visualize the latest data on the
                 world today.</span>
-            <button class="text-gray-300 hover:text-gray-700">View More _svg_</button>
+            <button class="text-gray-300 hover:text-gray-700">View More 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+            </button>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 border">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div class="col-span-2">
-                <img src="/assets/images/images.jpeg" alt="" class="h-full w-full object-cover rounded-xl">
+                <img src="/assets/images/modern-black-kitchen-island.jpeg" alt="" class="h-full w-full object-cover rounded-xl">
             </div>
-            <div class="bg-red-200">
-                <div class="h-24">
-                    <img src="/assets/images/f.jpeg" alt="" class="h-full w-full object-cover rounded-xl">
+            <div class="grid grid-cols-1">
+                <div class="">
+                    <img src="/assets/images/k.jpeg" alt="" class="object-cover rounded-xl">
                 </div>
-                <div class="h-24">
-                    <img src="/assets/images/h.jpeg" alt="" class="h-full w-full object-cover rounded-xl">
+                <div class="bg-blue-40">
+                    <img src="/assets/images/h.jpeg" alt="" class="object-cover rounded-xl">
                 </div>
             </div>
         </div>
@@ -199,10 +203,10 @@
                 </p>
             </div>
         </div>
-        <div class="grid grid-cols-6 mx-48 mt-24 ">
+        <div class="grid grid-cols-6 mx-48 mt-24 h-72 text-sm  pt-12">
             <div class="">
                 <h5 class="font-bold">Cytonn Residences</h5>
-                <ul class="text-gray-400">
+                <ul class="text-gray-400 my-2">
                     <li>About</li>
                     <li>Partners</li>
                     <li>Our Values</li>
@@ -210,67 +214,70 @@
                     <li>Videos</li>
                 </ul>
                 <h5 class="font-bold">For Apartments</h5>
-                <ul class="text-gray-400">
+                <ul class="text-gray-400 my-2">
                     <li>Living Spaces</li>
                 </ul>
             </div>
             <div class="">
                 <h5 class="font-bold">For Business</h5>
-                <ul class="text-gray-400">
+                <ul class="text-gray-400 my-2">
                     <li>Research</li>
                     <li>Living Office</li>
                     <li>Small Business Program</li>
                 </ul>
                 <h5 class="font-bold">For Education</h5>
-                <ul class="text-gray-400">
+                <ul class="text-gray-400 my-2">
                     <li>Research</li>
                     <li>Education Solutions</li>
                 </ul>
             </div>
             <div class="">
                 <h5 class="font-bold">Get Help</h5>
-                <ul class="text-gray-400">
+                <ul class="text-gray-400 my-2">
                     <li>Customer Service</li>
                     <li>Care and Assembly</li>
                     <li>FAQ</li>
                 </ul>
                 <h5 class="font-bold">Contacts</h5>
-                <ul class="text-gray-400">
+                <ul class="text-gray-400 my-2">
                     <li>Contact Us</li>
                     <li>Media Relations</li>
                 </ul>
             </div>
             <div class="">
                 <h5 class="font-bold">Reservation</h5>
-                <ul class="text-gray-400">
+                <ul class="text-gray-400 my-2">
                     <li>Find an apartment</li>
                     <li>Residences Store</li>
                     <li>Customer Journey</li>
                 </ul>
                 <h5 class="font-bold">Accounts</h5>
-                <ul class="text-gray-400">
+                <ul class="text-gray-400 my-2">
                     <li>Account Sign-in</li>
                     <li>Store</li>
                 </ul>
             </div>
             <div class="col-span-2">
                 <h5 class="font-bold">Sign up for our newsletter</h5>
-                <div>
-                    <input type="text" placeholder="Enter Email Address">
-                    <button>Sign Up</button>
+                <div class="my-4">
+                    <input type="text" placeholder="Enter Email Address" class="rounded-l-md border p-3 placeholder:font-light bg-white" >
+                    <button class="bg-gray-900 text-white p-3 rounded-r-md -ml-1">Sign Up</button>
                 </div>
                 <h5 class="font-bold">Follow Us</h5>
-                <div>
-                    _icon_ _icon_ _icon_ _icon_
+                <div class="my-4 w-48 flex justify-between">
+                    <img src="./assets/images/facebook.png" alt="" class="w-4 h-4 inline">
+                    <img src="./assets/images/twitter-black-shape.png" alt="" class="w-4 h-4 inline">
+                    <img src="./assets/images/pinterest.png" alt="" class="w-4 h-4 inline">
+                    <img src="./assets/images/instagram.png" alt="" class="w-4 h-4 inline">
                 </div>
             </div>
         </div>
-        <div class="flex mx-48 justify-between">
-            <p>_icon_ United States</p>
-            <p>© 2018 Cytonn Residences</p>
+        <div class="flex mx-48 justify-between h-12 text-sm text-gray-500 ">
+            <p class="font-bold pl-8"><img src="./assets/images/united-states.png" alt="" class="w-4 h-4 inline"> United States</p>
+            <p class="font-light">© 2018 Cytonn Residences</p>
             <p></p>
         </div>
-        <div class="border-t border-t-gray-500 h-24 bg-gray-200">
+        <div class="border-t border-t-gray-200 h-24 pt-8 text-sm">
             <ul class="flex justify-center">
                 <li class="mx-2">Privacy</li>
                 <li class="mx-2">Terms</li>
