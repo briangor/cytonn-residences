@@ -21,83 +21,264 @@
     </script>
 </head>
 
-<body class="p-0">
-    <nav class="text-white py-6 absolute w-screen">
-        <div class="flex w-full justify-around">
-            <span class="">CR _icon_</span>
-            <ul class="flex mx-4">
-                <li>Our Residences</li>
-                <li>Rooms & Suites</li>
-                <li>Meetings & Conferences</li>
-                <li>Services</li>
-                <li>Features</li>
+<body >
+    <nav class="text-white py-6 px-8 md:px-48 absolute w-screen">
+        <div class="md:flex w-full justify-around">
+            <span class="">Cytonn Residences</span>
+            <ul class="invisible md:visible flex mx-4 text-xs font-bold pt-1">
+                <li class="mx-2">Our Residences</li>
+                <li class="mx-2">Rooms & Suites</li>
+                <li class="mx-2">Meetings & Conferences</li>
+                <li class="mx-2">Services</li>
+                <li class="mx-2">Features</li>
             </ul>
-            <span class="">|</span>
-            <ul class="flex mx-4 ">
-                <li>Who we are</li>
-                <li>Media Centre</li>
-                <li>Support</li>
-                <li>Flag _icon_</li>
-                <li>Search _icon_</li>
+            <span class="invisible md:visible">|</span>
+            <ul class="flex text-xs font-bold pt-1 invisible md:visible">
+                <li class="mx-2">Who we are</li>
+                <li class="mx-2">Media Centre</li>
+                <li class="mx-2">Support</li>
+                <li class="mx-2">
+                    <img src="./assets/images/united-states.png" alt="" class="w-6 h-6">
+                </li>
+                <li class="text-sm mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>                      
+                </li>
             </ul>
+            <span class="invisible md:invisible">Menu</span>
         </div>
     </nav>
+    <!-- bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 -->
     <!-- Landing -->
-    <div class="bg-[url('./assets/images/dark-black-kitchen-lighting.jpeg')] h-[93vh] bg-cover mx-0 pt-24 px-48">
-        <div class="text-5xl w-96 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 my-4">
-            Luxurious apartments offers from £300</div>
-        <div class="text-white">Spend less on the fare, and more when you're here</div>
+    <div class="bg-[url('./assets/images/Getty-black-kitchen.jpeg')] md:h-[93vh] bg-cover mx-0 pb-4 pt-24 px-8 md:px-48 w-fit md:w-screen">
+        <div class="text-5xl font-extralight w-1/2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 md:mt-44">
+            <p class="">Luxurious apartments offers from £300</p>
+        </div>
+        <div class="text-white my-6">Spend less on the fare, and more when you're here</div>
         <button
-            class="h-12 w-44 rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white my-4">View
-            Deal _svg_ </button>
+            class="h-12 w-44 rounded-md text-white bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">View
+            Deal 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+              
+        </button>
         <div
-            class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-8 px-4 rounded-md text-white flex justify-between mt-56">
-            <label for="" class="border-r-2 border-red pt-4 pr-2">I'm looking for</label>
+            class="bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 py-8 px-4 rounded-md text-white flex justify-between mt-48">
+            <label for="" class="border-r-2 border-red pt-4 pr-2 font-extralight">I'm looking for</label>
             <input type="text" placeholder="Select Location"
-                class="h-12 w-44 px-4 bg-transparent border border-gray-100">
-            <input type="date" name="checkin" id="" placeholder="Check-In Date"
-                class="h-12 w-44 px-4 bg-transparent border border-gray-100">
-            <input type="date" name="checkout" id="" placeholder="Check-Out Date"
-                class="h-12 w-44 px-4 bg-transparent border border-gray-100">
-            <button>Make a Reservation _icon_</button>
+                class="h-12 w-44 px-4 bg-black/20 placeholder:text-white placeholder:font-extralight">
+            <input type="text" name="checkin" id="" placeholder="Check-In Date"
+                class="h-12 w-44 px-4 bg-black/20 placeholder:text-white placeholder:font-extralight">
+            <input type="text" name="checkout" id="" placeholder="Check-Out Date"
+                class="h-12 w-44 px-4 bg-black/20 placeholder:text-white placeholder:font-extralight">
+            <button>Make a Reservation 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>                  
+            </button>
         </div>
 
     </div>
     <!-- Second -->
-    <div class="bg-[url('./assets/images/images.jpeg')] h-[82vh] bg-cover mx-0 pt-24 px-48">
+    <div class="bg-[url('./assets/images/image.png')] h-[82vh] bg-cover mx-0 pt-24 px-48 w-fit md:w-screen">
         <div class="grid grid-cols-2 pt-12">
             <div class="pt-12">
-                <p class="text-4xl mt-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Giving you an experience, Something better than just living</p>
-                <p class="text-white mt-8 w-96">Refocus your workplace on people. Refocus your workplace on people. Refocus your workplace on people.Refocus your workplace on people.</p>
-                <button class="text-white mt-8">Learn More _svg_</button>
+                <p class="text-5xl mt-2 text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 font-extralight">
+                    Giving you an experience, Something better than just living</p>
+                <p class="text-white mt-8 w-96 font-extralight">Refocus your workplace on people. Refocus your workplace on people.
+                    Refocus your workplace on people.Refocus your workplace on people.</p>
+                <button class="text-white mt-8">Learn More 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>          
+                </button>
             </div>
             <div>
-                <img src="./assets/images/22eec56198294e342db796af433b1220.jpeg"  class="h-48 w-72" alt="">
+                <img src="./assets/images/22eec56198294e342db796af433b1220.jpeg" class="h-48 w-72" alt="">
                 <img src="./assets/images/d.jpeg" class="h-48 w-96 mt-4 ml-12" alt="">
             </div>
         </div>
     </div>
     <!-- Third -->
     <div class="bg-black h-[74vh] text-center pt-8 text-white">
-        <p class="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Explore our products</p>
-        <p class="text-white mt-4 ">Find the right design for enabling your people to do their best</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mx-44 mt-4">
-            <div class="h-full border ">
+        <p class="text-5xl font-extralight text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">Explore our
+            products</p>
+        <p class="text-white mt-4 font-extralight">Find the right design for enabling your people to do their best</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mx-44 mt-8">
+            <div class="h-full  ">
                 <img src="./assets/images/f.jpeg" alt="" class="object-cover h-full">
                 <span class="">Rooms & Suites</span>
             </div>
-            <div class="h-full border ">
+            <div class="h-full  ">
                 <img src="./assets/images/g.jpeg" alt="" class="object-cover h-full">
                 <span class="">Conferences & Meetings</span>
             </div>
-            <div class="h-full border">
+            <div class="h-full ">
                 <img src="./assets/images/h.jpeg" alt="" class="object-cover h-full">
                 <span>Dining</span>
             </div>
-            <div class="h-full border">
+            <div class="h-full ">
                 <img src="./assets/images/i.jpeg" alt="" class="object-cover h-full">
                 <span>Excursions & Activities</span>
             </div>
+        </div>
+    </div>
+    <!-- Fourth -->
+    <div class="bg-white mx-48 pt-16">
+        <p class="text-5xl font-extralight text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">Special Offers & Packages</p>
+        <div class="mt-4 flex justify-between">
+            <span class="font-extralight">Find the right design for enabling your people to do their best.</span>
+            <button class="text-gray-300 hover:text-gray-700">View More 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                  
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
+            <div class="h-96">
+                <img src="./assets/images/0a1e076df2aadcea8de99eb95abea90f.png" alt=""
+                    class="object-cover h-full w-full rounded-xl drop-shadow-2xl">
+            </div>
+            <div class="h-96">
+                <img src="./assets/images/l.png" alt="" class="object-cover h-full rounded-xl drop-shadow-2xl">
+            </div>
+            <div class="h-96">
+                <img src="./assets/images/novotel-esaad.jpeg" alt=""
+                    class="object-cover h-full rounded-xl drop-shadow-2xl">
+            </div>
+            <div class="h-96 w-full">
+                <img src="/assets/images/k.jpeg" alt="" class="object-cover h-full w-full rounded-xl drop-shadow-2xl">
+            </div>
+        </div>
+    </div>
+    <!-- Fifth -->
+    <div class="mx-48 pt-24">
+        <div
+            class="mb-12 mt-4 bg-[url('./assets/images/dark-black-kitchen-lighting.jpeg')] h-72 rounded-xl text-center text-white pt-12">
+            <p class="text-5xl font-extralight mb-2">Find a dream home</p>
+            <p class="text-lg mb-5 font-light">Find a top rated home with amenities you need</p>
+            <button
+                class="h-12 w-44 rounded-md text-white bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500">View
+                Deal 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>                  
+            </button>
+        </div>
+        <p class="text-4xl">News & Articles</p>
+        <div class="mt-4 flex justify-between">
+            <span class="">Find facts and figures on people and the environment, or visualize the latest data on the
+                world today.</span>
+            <button class="text-gray-300 hover:text-gray-700">View More _svg_</button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 border">
+            <div class="col-span-2">
+                <img src="/assets/images/images.jpeg" alt="" class="h-full w-full object-cover rounded-xl">
+            </div>
+            <div class="bg-red-200">
+                <div class="h-24">
+                    <img src="/assets/images/f.jpeg" alt="" class="h-full w-full object-cover rounded-xl">
+                </div>
+                <div class="h-24">
+                    <img src="/assets/images/h.jpeg" alt="" class="h-full w-full object-cover rounded-xl">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="h-[94vh] mt-12">
+        <div class="bg-[url('./assets/images/e.jpeg')] bg-cover h-80 text-white text-center pt-24">
+            <div class="bg-black/50 mx-80 h-48 px-12 pt-6">
+                <p class="mx-auto text-2xl italic font-extralight">"When most people travel to Nairobi, they want to
+                    see the Mara, but I've been spending most of our time in neighborhoods, living like locals."</p>
+                <p class="mt-8 font-light">From Joseph Wachira, Lived in <span class="text-orange-300">Wasini</span>
+                </p>
+            </div>
+        </div>
+        <div class="grid grid-cols-6 mx-48 mt-24 ">
+            <div class="">
+                <h5 class="font-bold">Cytonn Residences</h5>
+                <ul class="text-gray-400">
+                    <li>About</li>
+                    <li>Partners</li>
+                    <li>Our Values</li>
+                    <li>Timeline</li>
+                    <li>Videos</li>
+                </ul>
+                <h5 class="font-bold">For Apartments</h5>
+                <ul class="text-gray-400">
+                    <li>Living Spaces</li>
+                </ul>
+            </div>
+            <div class="">
+                <h5 class="font-bold">For Business</h5>
+                <ul class="text-gray-400">
+                    <li>Research</li>
+                    <li>Living Office</li>
+                    <li>Small Business Program</li>
+                </ul>
+                <h5 class="font-bold">For Education</h5>
+                <ul class="text-gray-400">
+                    <li>Research</li>
+                    <li>Education Solutions</li>
+                </ul>
+            </div>
+            <div class="">
+                <h5 class="font-bold">Get Help</h5>
+                <ul class="text-gray-400">
+                    <li>Customer Service</li>
+                    <li>Care and Assembly</li>
+                    <li>FAQ</li>
+                </ul>
+                <h5 class="font-bold">Contacts</h5>
+                <ul class="text-gray-400">
+                    <li>Contact Us</li>
+                    <li>Media Relations</li>
+                </ul>
+            </div>
+            <div class="">
+                <h5 class="font-bold">Reservation</h5>
+                <ul class="text-gray-400">
+                    <li>Find an apartment</li>
+                    <li>Residences Store</li>
+                    <li>Customer Journey</li>
+                </ul>
+                <h5 class="font-bold">Accounts</h5>
+                <ul class="text-gray-400">
+                    <li>Account Sign-in</li>
+                    <li>Store</li>
+                </ul>
+            </div>
+            <div class="col-span-2">
+                <h5 class="font-bold">Sign up for our newsletter</h5>
+                <div>
+                    <input type="text" placeholder="Enter Email Address">
+                    <button>Sign Up</button>
+                </div>
+                <h5 class="font-bold">Follow Us</h5>
+                <div>
+                    _icon_ _icon_ _icon_ _icon_
+                </div>
+            </div>
+        </div>
+        <div class="flex mx-48 justify-between">
+            <p>_icon_ United States</p>
+            <p>© 2018 Cytonn Residences</p>
+            <p></p>
+        </div>
+        <div class="border-t border-t-gray-500 h-24 bg-gray-200">
+            <ul class="flex justify-center">
+                <li class="mx-2">Privacy</li>
+                <li class="mx-2">Terms</li>
+                <li class="mx-2">Accessibility</li>
+                <li class="mx-2">Legal</li>
+                <li class="mx-2">Site Map</li>
+                <li class="mx-2">Site Feedback</li>
+            </ul>
         </div>
     </div>
 </body>
